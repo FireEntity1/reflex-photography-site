@@ -44,7 +44,7 @@ def index() -> rx.Component:
             ),
             rx.center(motion(
                 rx.card(
-                    rx.text("Instagram Page:",font_weight="bold"size="4",),
+                    rx.text("Instagram Page:",font_weight="bold",),
                     rx.text("ak.planespotting"),
                 ),initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
