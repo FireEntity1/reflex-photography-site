@@ -14,13 +14,43 @@ class State(rx.State):
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.container(
-        rx.color_mode.button(position="top-right"),
         rx.vstack(
             rx.heading("FireEntity's Aviation Photography", size="9"),
             rx.divider(width="100%",margin_bottom="5%",margin_top="5%"),
             rx.text(
                 "A collection of photos I've taken over the months!",
                 size="5",margin_bottom="8%",
+            ),
+
+            rx.center(motion(
+                rx.card(
+                    rx.text("Gear:",font_weight="bold",),
+                    rx.text("Canon T7 + Canon 18-55mm IS STM"),
+                ),initial={"scale": 0.9},
+                while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
+                while_tap={"scale": 1.3},
+                transition={"type": "spring", "stiffness": 500, "damping": 25,},
+            ),width="100%",
+            ),
+            rx.center(motion(
+                rx.card(
+                    rx.text("Location:",font_weight="bold",),
+                    rx.text("CYYC Int'l"),
+                ),initial={"scale": 0.9},
+                while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
+                while_tap={"scale": 1.3},
+                transition={"type": "spring", "stiffness": 500, "damping": 25,},
+            ),width="100%",
+            ),
+            rx.center(motion(
+                rx.card(
+                    rx.text("Instagram Page:",font_weight="bold"size="4",),
+                    rx.text("ak.planespotting"),
+                ),initial={"scale": 0.9},
+                while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
+                while_tap={"scale": 1.3},
+                transition={"type": "spring", "stiffness": 500, "damping": 25,},
+            ),width="100%",
             ),
             rx.flex(
 
@@ -41,7 +71,7 @@ def index() -> rx.Component:
                     width="100%",),
                 style={
         "box-shadow": "0 0 15px 5px rgba(0, 123, 255, 0.4)",
-    },),
+    },background="black"),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
                 while_tap={"scale": 1.3},
@@ -66,7 +96,7 @@ def index() -> rx.Component:
                     width="100%",),style={
         "box-shadow": "0 0 15px 5px rgba(255, 50, 0, 0.5)",
     },
-                size="4",flex_grow="5"
+                size="4",flex_grow="5",background="black"
                 ),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
@@ -92,7 +122,7 @@ def index() -> rx.Component:
                     width="100%",),style={
         "box-shadow": "0 0 15px 5px rgba(255, 50, 0, 0.5)",
     },
-                size="4",flex_grow="5"
+                size="4",flex_grow="5",background="black"
                 ),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
@@ -118,7 +148,7 @@ def index() -> rx.Component:
                     width="100%",),style={
         "box-shadow": "0 0 15px 5px rgba(0, 150, 150, 0.5)",
     },
-                size="4",flex_grow="5"
+                size="4",flex_grow="5",background="black"
                 ),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
@@ -144,7 +174,7 @@ def index() -> rx.Component:
                     width="100%",),style={
         "box-shadow": "0 0 15px 5px rgba(250, 100, 0, 0.5)",
     },
-                size="4",flex_grow="5"
+                size="4",flex_grow="5",background="black"
                 ),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
@@ -170,7 +200,7 @@ def index() -> rx.Component:
                     width="100%",),style={
         "box-shadow": "0 0 15px 5px rgba(250, 100, 0, 0.5)",
     },
-                size="4",flex_grow="5"
+                size="4",flex_grow="5",background="black"
                 ),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
@@ -196,7 +226,7 @@ def index() -> rx.Component:
                     width="100%",),style={
         "box-shadow": "0 0 15px 5px rgba(250, 100, 0, 0.5)",
     },
-                size="4",flex_grow="5"
+                size="4",flex_grow="5",background="black"
                 ),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
@@ -222,7 +252,7 @@ def index() -> rx.Component:
                     width="100%",),style={
         "box-shadow": "0 0 15px 5px rgba(250, 0, 0, 0.5)",
     },
-                size="4",flex_grow="5"
+                size="4",flex_grow="5",background="black"
                 ),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
@@ -248,7 +278,7 @@ def index() -> rx.Component:
                     width="100%",),style={
         "box-shadow": "0 0 15px 5px rgba(0, 250, 100, 0.5)",
     },
-                size="4",flex_grow="5"
+                size="4",flex_grow="5",background="black"
                 ),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
@@ -274,7 +304,7 @@ def index() -> rx.Component:
                     width="100%",),style={
         "box-shadow": "0 0 15px 5px rgba(0, 200, 0, 0.5)",
     },
-                size="4",flex_grow="5"
+                size="4",flex_grow="5",background="black"
                 ),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
@@ -300,7 +330,7 @@ def index() -> rx.Component:
                     width="100%",),style={
         "box-shadow": "0 0 15px 5px rgba(0, 200, 0, 0.5)",
     },
-                size="4",flex_grow="5"
+                size="4",flex_grow="5",background="black"
                 ),
                 initial={"scale": 0.9},
                 while_hover={"scale": 1.1, "rotate": 5,"translate": {50,50,50}},
@@ -316,9 +346,13 @@ def index() -> rx.Component:
             justify="center",
             min_height="85vh",
             
-        ),
+        ),background="linear-gradient(black, #222333,#111233)",
     )
 
 
-app = rx.App()
+app = rx.App(
+    theme=rx.theme(
+        appearance="dark",
+    )
+)
 app.add_page(index)
