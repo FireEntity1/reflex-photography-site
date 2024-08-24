@@ -1,1 +1,4 @@
-A site that displays my aviation photography! Live at https://ak-photography.reflex.run
+
+A site that displays all of my aviation photography! 
+
+Visit at https://ak-photography.reflex.run/
